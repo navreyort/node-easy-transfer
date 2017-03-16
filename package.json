@@ -1,0 +1,40 @@
+{
+  "name": "node-easy-transfer",
+  "author": "Akito van Troyer",
+  "maintainers": [
+    {
+      "name": "Akito van Troyer",
+      "email": "nav.reyort@gmail.com"
+    }
+  ],
+  "version": "0.0.1",
+  "description": "Easily transfer serial data between nodejs and arduino.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run build; node index.js",
+    "build": "babel dev/ -d ./"
+  },
+  "keywords": [
+    "Serial",
+    "Arduino"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0"
+  },
+  "dependencies": {
+    "serialport": "4.0.7"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.mit.edu:akito/Constellation.git"
+  }
+}
